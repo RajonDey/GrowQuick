@@ -1,233 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrowQuick Sites - Get Online Fast 🚀</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrowQuick Sites - Skyrocket Your Business 🚀</title>
     <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        text-align: center;
+        background-color: #f9f9f9;
+      }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
         }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
+        to {
+          opacity: 1;
+          transform: translateY(0);
         }
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
 
-        /* Header/Hero Section */
-        header {
-            background-color: #f8f9fa;
-            padding: 60px 20px;
-            animation: fadeIn 1s ease-in;
-        }
-        header h1 {
-            font-size: 2.8em;
-            margin-bottom: 15px;
-            color: #1a73e8;
-        }
-        header p {
-            font-size: 1.3em;
-            margin-bottom: 25px;
-        }
-        .cta-button {
-            padding: 15px 35px;
-            background-color: #1a73e8;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: transform 0.3s, background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #1557b0;
-            transform: scale(1.05);
-            animation: bounce 0.5s;
-        }
+      /* Header/Hero Section */
+      header {
+        background: linear-gradient(135deg, #1a73e8, #34c759);
+        padding: 70px 20px;
+        color: white;
+        animation: fadeIn 1s ease-in;
+      }
+      header h1 {
+        font-size: 3em;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      header p {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+      }
+      .limited-offer {
+        font-size: 1.2em;
+        color: #ffeb3b;
+        font-weight: bold;
+        margin-bottom: 25px;
+        animation: pulse 2s infinite;
+      }
+      .cta-button {
+        padding: 18px 40px;
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.3em;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+      .cta-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
 
-        /* Video Placeholder */
-        .video-placeholder {
-            width: 100%;
-            max-width: 600px;
-            height: 300px;
-            background-color: #ddd;
-            margin: 20px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2em;
-            color: #666;
-            border-radius: 10px;
-        }
+      /* Video Placeholder */
+      .video-placeholder {
+        width: 100%;
+        max-width: 600px;
+        height: 300px;
+        background-color: #ddd;
+        margin: 30px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        color: #666;
+        border-radius: 15px;
+        border: 3px dashed #ff5722;
+      }
 
-        /* General Section Styles */
-        section {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: 0 auto;
-            animation: fadeIn 1.5s ease-in;
-        }
-        section h2 {
-            font-size: 2.2em;
-            margin-bottom: 25px;
-            color: #222;
-        }
-        section p {
-            font-size: 1.2em;
-            margin-bottom: 15px;
-        }
-        ul {
-            list-style: none;
-            margin: 20px 0;
-        }
-        ul li {
-            font-size: 1.2em;
-            margin: 15px 0;
-            padding-left: 30px;
-            position: relative;
-            transition: transform 0.3s;
-        }
-        ul li:hover {
-            transform: translateX(10px);
-        }
-        ul li:before {
-            content: "✨";
-            color: #1a73e8;
-            position: absolute;
-            left: 0;
-        }
+      /* General Section Styles */
+      section {
+        padding: 60px 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        animation: fadeIn 1.5s ease-in;
+      }
+      section h2 {
+        font-size: 2.5em;
+        margin-bottom: 25px;
+        color: #1a73e8;
+      }
+      section p {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+      }
+      ul {
+        list-style: none;
+        margin: 20px 0;
+      }
+      ul li {
+        font-size: 1.2em;
+        margin: 15px 0;
+        padding-left: 35px;
+        position: relative;
+        transition: transform 0.3s;
+      }
+      ul li:hover {
+        transform: translateX(10px);
+      }
+      ul li:before {
+        content: "🔥";
+        color: #ff5722;
+        margin-right: 10px;
+      }
 
-        /* CTA Section with Lead Form */
-        .cta-section {
-            background-color: #e9ecef;
-            padding: 60px 20px;
-        }
-        .cta-section a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .cta-section a:hover {
-            text-decoration: underline;
-        }
-        .lead-form {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-        .lead-form input {
-            padding: 12px;
-            width: 100%;
-            max-width: 300px;
-            border: 2px solid #1a73e8;
-            border-radius: 5px;
-            font-size: 1em;
-            outline: none;
-            transition: border-color 0.3s;
-        }
-        .lead-form input:focus {
-            border-color: #1557b0;
-        }
-        .lead-form button {
-            padding: 12px 30px;
-            background-color: #1a73e8;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.1em;
-            cursor: pointer;
-            transition: transform 0.3s, background-color 0.3s;
-        }
-        .lead-form button:hover {
-            background-color: #1557b0;
-            transform: scale(1.05);
-        }
+      /* Testimonials Placeholder */
+      .testimonials {
+        background-color: #fff;
+        padding: 40px 20px;
+        border: 2px solid #1a73e8;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 700px;
+      }
 
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 25px;
-            font-size: 1em;
-        }
-        footer a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
+      /* CTA Section with Lead Form */
+      .cta-section {
+        background: linear-gradient(135deg, #34c759, #1a73e8);
+        padding: 70px 20px;
+        color: white;
+        max-width: 100%;
+      }
+      .cta-section h2 {
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      }
+      .cta-section a {
+        color: #ffeb3b;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .cta-section a:hover {
+        text-decoration: underline;
+      }
+      .lead-form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .lead-form input {
+        padding: 15px;
+        width: 100%;
+        max-width: 350px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1em;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .lead-form input:focus {
+        outline: none;
+        transform: scale(1.02);
+      }
+      .lead-form button {
+        padding: 15px 40px;
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+      .lead-form button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 30px;
+        font-size: 1em;
+      }
+      footer a {
+        color: #ffeb3b;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header/Hero Section -->
     <header>
-        <h1>Get Your Business Online in Just Days! 🚀</h1>
-        <p>Affordable, custom landing pages for small businesses starting at $400. 🎉</p>
-        <button class="cta-button">Contact Us Now 📞</button>
-        <div class="video-placeholder">🎥 [Video Placeholder - Add Your Intro Video Here]</div>
+      <h1>Skyrocket Your Business Online! 🚀</h1>
+      <p>Get a custom landing page for just $400—grow fast, pay less! 🎉</p>
+      <p class="limited-offer">
+        ⏰ Limited Offer: First 5 Clients Get 50% Off!
+      </p>
+      <button class="cta-button">Claim Your Spot Now! 🔥</button>
+      <div class="video-placeholder">
+        🎥 [Video Placeholder - Add Your Intro Video Here]
+      </div>
     </header>
 
     <!-- What You Offer -->
     <section>
-        <h2>Simple Websites, Big Results 🌟</h2>
-        <ul>
-            <li>One-page site tailored to your business</li>
-            <li>Mobile-friendly and fast-loading 📱</li>
-            <li>Built and delivered in under a month ⏳</li>
-        </ul>
+      <h2>Why You’ll Love It 🌟</h2>
+      <ul>
+        <li>Stunning one-page site tailored to YOUR business</li>
+        <li>Works perfectly on mobile—reach customers anywhere 📱</li>
+        <li>Live in under a month—start selling ASAP ⏳</li>
+      </ul>
     </section>
 
     <!-- Why Choose Us -->
     <section>
-        <h2>Why Work With Us? 🤝</h2>
-        <p>We’re a small team obsessed with helping businesses grow! 🌱</p>
-        <p>Affordable pricing with no hidden fees 💰</p>
-        <p>Personalized support every step of the way 💬</p>
+      <h2>Why Us? Because We Get It! 🤝</h2>
+      <p>Small team, BIG passion for your success 🌱</p>
+      <p>No sneaky fees—just honest, affordable pricing 💰</p>
+      <p>We’re with you every step—hassle-free support 💬</p>
+    </section>
+
+    <!-- Testimonials Placeholder -->
+    <section>
+      <h2>What Clients Say 🗣️</h2>
+      <div class="testimonials">
+        <p>
+          “[Placeholder] These guys doubled my sales in a week!” - Happy Client
+        </p>
+        <p>
+          “[Placeholder] Fast, affordable, and amazing results!” - Another Happy
+          Client
+        </p>
+      </div>
     </section>
 
     <!-- How It Works -->
     <section>
-        <h2>Our Process ⚙️</h2>
-        <p>1. Contact us for a free quote 📧</p>
-        <p>2. We design and build your site 🎨</p>
-        <p>3. Launch your online presence! 🚀</p>
+      <h2>How We Make It Happen ⚙️</h2>
+      <p>1. You claim your free quote 📧</p>
+      <p>2. We craft your dream site 🎨</p>
+      <p>3. You launch and watch the magic happen! 🚀</p>
     </section>
 
     <!-- Call-to-Action Section with Lead Form -->
     <section class="cta-section">
-        <h2>Ready to Grow Your Business? 🌍</h2>
-        <p>Drop your details below and we’ll get back to you ASAP! ✉️</p>
-        <form class="lead-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <button type="submit">Send It! 🚀</button>
-        </form>
-        <p>Or join our Discord: <a href="#">[Your Discord Link]</a> 🎮</p>
+      <h2>Don’t Miss Out—Grow Now! 🌍</h2>
+      <p>Secure your spot—fill this out and let’s roll! ✉️</p>
+      <form class="lead-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <button type="submit">Get Started Now! 🚀</button>
+      </form>
+      <p>Or chat with us on Discord: <a href="#">[Your Discord Link]</a> 🎮</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 GrowQuick Sites. All rights reserved. 🌟</p>
-        <p>Contact: <a href="mailto:hello@growquicksites.com">hello@growquicksites.com</a></p>
+      <p>© 2025 GrowQuick Sites. All rights reserved. 🌟</p>
+      <p>
+        Contact:
+        <a href="mailto:hello@growquicksites.com">hello@growquicksites.com</a>
+      </p>
     </footer>
-</body>
+  </body>
 </html>
